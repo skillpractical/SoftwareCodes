@@ -1,44 +1,28 @@
-/* SkillPractical Sample Java Code for Jenkin Deployment*/
-import java.util.HashMap;
-import java.util.Map;
+public class PascalsTriangle {
+   static int factorial(int n) {
+      int f;
 
-public class Solution {
- 
-  public static Map<Integer, Map<Integer, Integer>> pascalHash 
-  = new HashMap<Integer,Map<Integer,Integer>>();
-
-  public static  int pascal(int col, int row){
-    if(col == 0 || col == row) {
-      return 1;
-    }
-    int pascalValue = 0;
-    if(pascalHash.containsKey(col)){
-      if(pascalHash.get(col).containsKey(row)){
-        return pascalHash.get(col).get(row);
+      for(f = 1; n > 1; n--){
+         f *= n;
       }
-      else{
-        pascalValue = pascal(col, row - 1) + pascal(col - 1, row - 1);
-        pascalHash.get(col).put(row,pascalValue);
-      }
-    }
-    else{
-      pascalValue = pascal(col, row - 1) + pascal(col - 1, row - 1);
-      Map<Integer, Integer> rowHashMap = new HashMap();
-      rowHashMap.put(row,pascalValue);
-      pascalHash.put(col,rowHashMap);
-    }
-    return pascalValue;
-  }
+      return f;
+   }
+   static int ncr(int n,int r) {
+      return factorial(n) / ( factorial(n-r) * factorial(r) );
+   }
+   public static void main(String args[]){
+      System.out.println();
+      int n, i, j;
+      n = 5;
 
-  public static void main(String[] args) {
-	  if(Solution.pascal(0,0) ==  1 &&
-			  Solution.pascal(1,2) ==  2 &&
-			  Solution.pascal(5,6) ==  6 &&
-			  Solution.pascal(4,8) ==  70 &&
-			  Solution.pascal(6,6) ==  1) {
-		  System.out.println("Pass");		  
-	  }else {
-		  System.out.println("Failed");
-	  }
-  }
+      for(i = 0; i <= n; i++) {
+         for(j = 0; j <= n-i; j++){
+            System.out.print(" ");
+         }
+         for(j = 0; j <= i; j++){
+            System.out.print(" "+ncr(i, j));
+         }
+         System.out.println();
+      }
+   }
 }
