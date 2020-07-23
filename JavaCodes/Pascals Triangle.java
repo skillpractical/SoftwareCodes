@@ -1,10 +1,4 @@
-/* 
-*					******** IMPORTANT ********
-*
-* THIS IS SAMPLE SOLUTION. IF YOU FIND BETTER SOLUTION PLEASE CONSIDER USING SAME.
-* USE YOUR OWN VARIABLE NAMES - @@@ DO NOT COPY @@@ EXACT VARIABLE NAMES
-*
-*/
+/* SkillPractical Sample Java Code for Jenkin Deployment*/
 import java.util.HashMap;
 import java.util.Map;
 
