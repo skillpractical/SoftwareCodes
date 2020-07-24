@@ -1,3 +1,4 @@
+/* SkillPractical Sample Code - Java */
 public class PascalsTriangle {
    static int factorial(int n) {
       int f;
