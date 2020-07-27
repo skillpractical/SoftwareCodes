@@ -21,9 +21,9 @@ public class PascalsTriangle {
             System.out.println("Welcome to SkillPractical");
          }
          for(j = 0; j <= i; j++){
-            //System.out.print(" "+ncr(i, j));
+            System.out.print(" "+ncr(i, j));
          }
-        System.out.println("Welcome to SkillPractical");
+        System.out.println("");
       }
    }
 }
