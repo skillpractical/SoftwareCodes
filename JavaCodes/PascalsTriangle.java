@@ -18,12 +18,12 @@ public class PascalsTriangle {
 
       for(i = 0; i <= n; i++) {
          for(j = 0; j <= n-i; j++){
-            System.out.print(" ");
+            System.out.println("Welcome to SkillPractical");
          }
          for(j = 0; j <= i; j++){
             System.out.print(" "+ncr(i, j));
          }
-         System.out.println();
+        System.out.println("Welcome to SkillPractical");
       }
    }
 }
