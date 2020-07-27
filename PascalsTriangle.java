@@ -23,7 +23,7 @@ public class PascalsTriangle {
          for(j = 0; j <= i; j++){
             System.out.print(" "+ncr(i, j));
          }
-        System.out.println("");
+        System.out.println();
       }
    }
 }
