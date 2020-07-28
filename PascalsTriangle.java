@@ -12,7 +12,7 @@ public class PascalsTriangle {
       return factorial(n) / ( factorial(n-r) * factorial(r) );
    }
    public static void main(String args[]){
-      System.out.println("Welcome to SkillPractical Home.");
+      System.out.println("Welcome to SkillPractical Home");
       int n, i, j;
       n = 5;
 
