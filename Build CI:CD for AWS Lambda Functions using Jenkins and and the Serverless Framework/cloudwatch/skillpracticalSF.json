@@ -1,0 +1,19 @@
+{
+	"AlarmName": "sampleCWAlarm",
+    "Namespace": "AWS/EC2",
+    "MetricName": "CPUUtilization",
+    "Dimensions": [
+        {
+            "Name": "InstanceId",
+            "Value": "i-1234567890abcdef0"
+        }
+    ],
+    "ComparisonOperator": "GreaterThanThreshold",
+    "DatapointsToAlarm": 3,
+    "EvaluationPeriods": 4,
+    "Period": 60,
+    "Statistic": "Average",
+    "Threshold": 40,
+    "AlarmDescription": "CPU Utilization of i-1234567890abcdef0 with 40% as threshold",
+    "AlarmName": "Instance i-1234567890abcdef0 CPU Utilization"
+}

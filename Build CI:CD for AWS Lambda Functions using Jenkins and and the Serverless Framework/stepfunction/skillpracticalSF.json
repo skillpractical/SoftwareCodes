@@ -1,0 +1,6 @@
+{
+    "name": "skillpracticalSF",
+    "definition": "",
+    "roleArn": "arn:aws:iam::735409274396:role/tar_role",
+    "type": "STANDARD"
+}
