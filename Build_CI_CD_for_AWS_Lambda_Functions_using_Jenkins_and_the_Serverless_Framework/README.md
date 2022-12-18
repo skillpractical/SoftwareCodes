@@ -1,0 +1,7 @@
+# skillpractical
+
+Serverless architectures are application designs that incorporate third-party services, and/or that include custom code run in managed, ephemeral containers on a "Functions as a Service" (FaaS) platform. This project enables deployment of serverless services over AWS using Jenkins.
+
+AWS Lambda is a serverless computing service from AWS. Application logic can be written as functions and the actions can be triggered. For this cloud service, no platform-level services are exposed to end-user. We can also call this as Functions as a Service (FaaS). Since Serverless Computing is different than other traditional computing, Serverless application Delivery pipeline and Continuous Integration and Continuous Deployment are handled differently.
+
+The serverless framework aims at automating the selective deployment of AWS artifacts using Jenkins declarative pipeline. Framework consumes a YAML file containing a list of artifacts to be deployed for each of the serverless services (lambda/step function/cloudwatch). To start the deployment, the user triggers the pipeline by providing which services he wants to deploy and the corresponding artifacts list will be pulled from the YAML file. Source for all of these services will be pulled from GIT which follows a standard naming convention and then the pipeline will process deployment of all the artifacts for a particular service in one go. Once completed all the components of an application specified in a particular build will be deployed over AWS.
